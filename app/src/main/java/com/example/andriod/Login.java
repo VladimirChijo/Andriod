@@ -43,6 +43,7 @@ public class Login extends AppCompatActivity {
                 startActivity(rclient);
             }
         });
+        loginClient();
     }
 
     public void loginClient(){
@@ -77,5 +78,9 @@ public class Login extends AppCompatActivity {
             }
         });*/
         //email.setText(Data.TOKEN);
+    }
+    public void princi(View view){
+        Intent main= new Intent(this, principal.class);
+        startActivity(main);
     }
 }
